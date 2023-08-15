@@ -1,0 +1,237 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #111;
+    color: #f39c12;
+}
+
+/* Header Styles */
+.header {
+    background-color: #000;
+    border-bottom: 1px solid #222;
+}
+
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('hero-background.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-brand img {
+    max-width: 150px;
+    filter: brightness(0) invert(1);
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Section Styles */
+.features-section, .pricing-section, .reviews-section, .location-section, .contact-section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+/* Pricing Option Styles */
+.pricing-option {
+    background-color: #222;
+    border: 1px solid #333;
+    padding: 50px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.pricing-option:hover {
+    transform: scale(1.05);
+}
+
+.pricing-option h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+.price {
+    font-size: 2.5rem;
+    color: #f39c12;
+    margin-bottom: 30px;
+}
+
+/* Review Styles */
+.review {
+    background-color: #333;
+    border: 1px solid #444;
+    padding: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.review p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+.review-author {
+    font-size: 1.2rem;
+    color: #f39c12;
+}
+
+.review:hover {
+    transform: translateY(-10px);
+}
+
+/* Location Map Styles */
+.map {
+    margin-top: 50px;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    background-color: #222;
+    border: 1px solid #333;
+    padding: 60px;
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-form button {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Button Styles */
+.btn-orange {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.btn-orange:hover {
+    background-color: #e67e22;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-toggler-icon {
+        background-color: #f39c12;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 2rem;
+    }
+
+    .pricing-option,
+    .review,
+    .contact-form {
+        padding: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+    }
+
+    .contact-form button {
+        padding: 10px 20px;
+    }
+}
+
+/* styles.css */
+
+/* Adjustments for the booking form */
+.booking-cell {
+    padding: 20px; /* Adjust the padding as needed */
+    text-align: center;
+}
+
+.booking-form {
+    max-width: 300px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.booking-form input[type="date"],
+.booking-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.booking-form button {
+    cursor: pointer;
+}
+
+.booking-form input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
